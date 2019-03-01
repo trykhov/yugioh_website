@@ -29,6 +29,39 @@ nav {
     float: right;
     color: white;
   }
+
+  .grid-promo {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "image-1 image-3 promo"
+      "image-2 image-2 promo";
+  }
+
+  .promo-banner {
+    grid-area: promo;
+    width: 100%;
+  }
+
+  .news-image-1 {
+    grid-area: image-1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .news-image-2 {
+    grid-area: image-3;
+    width: 100%;
+    height: 100%;
+  }
+
+  .news-image-3 {
+    grid-area: image-2;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 
@@ -40,16 +73,6 @@ nav {
   header {
     display: flex;
     justify-content: center;
-  }
-
-  .promo-banner {
-    display: left;
-    width: 100%;
-    height: 100%;
-  }
-
-  .latest-news {
-    display: right;
   }
 }
 
@@ -103,19 +126,41 @@ nav a:hover {
 /************************************** Promo **********************************/
 
 .grid-promo {
-  overflow: auto;
+  background-color: black;
 }
-
-.latest-news {
-  float: left;
-}
-
-/* .news-image {
-  height: 25%;
-  width: 25%;
-} */
-
 
 .promo-banner {
-  float: right;
+  width: 100%;
+}
+
+.news-image-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.news-image-2 {
+  width: 100%;
+  height: 100%;
+}
+
+.news-image-3 {
+  width: 100%;
+  height: 100%;
+}
+
+/******************************** Latest Products ******************************/
+
+.latest-products {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 300px;
+  grid-column-gap: 1em;
+  background-color: gray;
+}
+
+
+
+.product img {
+  width: 100%;
+  height: 100%;
 }

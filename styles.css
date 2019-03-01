@@ -23,51 +23,6 @@ nav {
   display: inline-block;
 }
 
-@media screen and (min-width: 1000px) {
-  .menu-bar {
-    display: none;
-    float: right;
-    color: white;
-  }
-
-  .grid-promo {
-    background-color: black;
-    display: grid;
-    grid-template-columns: 20% 30% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-      "image-1 image-3 promo"
-      "image-2 image-2 promo";
-  }
-
-  .promo-banner {
-    grid-area: promo;
-  }
-
-  .news-image-1 {
-    grid-area: image-1;
-  }
-
-  .news-image-2 {
-    grid-area: image-3;
-  }
-
-  .news-image-3 {
-    grid-area: image-2;
-  }
-}
-
-
-@media screen and (max-width: 1000px) {
-  nav, #search-container {
-    display: none;
-  }
-
-  header {
-    display: flex;
-    justify-content: center;
-  }
-}
 
 
 nav li {
@@ -213,4 +168,64 @@ footer p {
 
 .credit-logo {
   height: 100%;
+}
+
+/****************************** Media Query **********************************/
+
+@media screen and (min-width: 1000px) {
+  .menu-bar {
+    display: none;
+    float: right;
+    color: white;
+  }
+
+  .grid-promo {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "image-1 image-3 promo"
+      "image-2 image-2 promo";
+  }
+
+  .promo-banner {
+    grid-area: promo;
+  }
+
+  .news-image-1 {
+    grid-area: image-1;
+  }
+
+  .news-image-2 {
+    grid-area: image-3;
+  }
+
+  .news-image-3 {
+    grid-area: image-2;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  nav, #search-container {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .latest-products {
+    display: none;
+  }
+
+
 }

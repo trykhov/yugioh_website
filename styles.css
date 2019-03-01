@@ -83,7 +83,6 @@ nav a:hover {
 }
 
 
-
 /******************************** Latest Products ******************************/
 #products {
   background-color: gray;
@@ -110,11 +109,49 @@ nav a:hover {
   height: 100%;
 }
 
+.new-product {
+  position: relative;
+}
+
+.text-container {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.new-product:hover .promo-image {
+  opacity: 0.2;
+}
+
+.new-product:hover .text-container {
+  opacity: 1;
+}
+
 #click-more {
   text-decoration: none;
   color: #fff;
   font-size: 60px;
   font-family: sans-serif;
+}
+
+.text {
+  color: white;
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+}
+
+.learn-more {
+  width: 80%;
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  background-color: #41E734;
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  margin: 10px;
 }
 
 /************************************ Footer **********************************/

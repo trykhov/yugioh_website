@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/********************************** Navigation ********************************/
+header {
+  background-color: black;
+  overflow: auto;
+}
+
+
+.logo {
+  width: 200px;
+  height: 100px;
+  float: left;
+}
+
+nav {
+  margin: 37px 0;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-bar {
+    display: none;
+    float: right;
+    color: white;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  nav, #search-container {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .promo-banner {
+    display: left;
+    width: 100%;
+    height: 100%;
+  }
+
+  .latest-news {
+    display: right;
+  }
+}
+
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+}
+
+nav a {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #bc2525;
+}
+
+
+#search-container {
+  float: right;
+  margin: 34px 20px;
+}
+
+#search-text {
+  font-size: 17px;
+  padding: 6px 10px;
+  border: none;
+}
+
+#search-button {
+  float: right;
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-bar {
+  position: absolute;
+  left: 15px;
+  top: 34px;
+  color: gray;
+
+}
+
+/************************************** Promo **********************************/
+
+.grid-promo {
+  overflow: auto;
+}
+
+.latest-news {
+  float: left;
+}
+
+/* .news-image {
+  height: 25%;
+  width: 25%;
+} */
+
+
+.promo-banner {
+  float: right;
+}

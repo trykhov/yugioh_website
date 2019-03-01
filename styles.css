@@ -123,8 +123,7 @@ footer {
   display: flex;
   background-color: black;
   padding: 20px;
-  height: 100px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -163,7 +162,11 @@ footer p {
 
 #company-logo {
   grid-area: company;
-  height: 100%;
+  height: 100px;
+}
+
+.credit-copyright{
+  width: 100%;
 }
 
 .credit-logo {
@@ -227,5 +230,7 @@ footer p {
     display: none;
   }
 
-
+  #copyright {
+    margin-top: 30px;
+  }
 }
